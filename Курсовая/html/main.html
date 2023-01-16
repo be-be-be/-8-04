@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="RU">
+
+<head>
+    <meta charset="utf-8" name="description" content="Веб-приложение для рекламного агенства" name="keywords"
+        content="реклама, объявление, ...">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../img/goose1.png" type="image/x-icon">
+    <title>Главная</title>
+</head>
+
+<body>
+    <script type="text/javascript" src="../scripts/main.js"></script>
+    <script type="text/javascript" src="../js/jquery-1.4.1.min.js"></script>
+    <header>
+
+        <div class="logotype">
+            <img src="../img/goose2.png" alt="logo" class="logo" type="button" id="main">
+        </div>
+        <div class="navigation">
+            <input type="button" class="btn_menu transition" id="about" value="О нас">
+            <a href="#services">Услуги</a>
+            <a href="#contacts">Контакты</a>
+            <div class="number">+7 (969) 96-69-96</div>
+        </div>
+    </header>
+    <main>
+        <div class="title">
+            <h1>Гусь – лучшая реклама в твоём городе!</h1>
+            <p>Никто не сможет пройти мимо харизматичного гуся.</p>
+            <a href="#application"><input type="button" id="app" class="btns" value="Оставить заявку"></a>
+        </div>
+        <a name="services">
+            <h2>Наши услуги</h2>
+        </a>
+
+        <div class="list" id="out">
+            <script type="text/javascript" src="../scripts/uslugi.js"></script>
+        </div>
+
+        <form class="form-wrap" id="form-wrap"><a name="application">
+                <h2>Оставить заявку</h2>
+            </a>
+            <input class="formm" type="name" id="name" placeholder="Имя" required />
+            <input class="formm" type="email" id="email" placeholder="Электронная почта" required />
+            <input class="formm" type="tel" id="tel" placeholder="Контактный телефон" required />
+            <p><textarea name="message" cols="70" rows="7" id="comment" placeholder="Оставьте комментарий"></textarea>
+            </p>
+            <input type="submit" class="btns" id="svz" value="Свяжитесь со мной!">
+            <output id="msg" style="width: 200px; height: 50px; font-size: 20px;"></output>
+        </form>
+
+        <div class="contact_list">
+            <div class="osn"><a name="contacts">
+                    <h4>Наши контакты</h4>
+                </a>
+                <p>ООО Рекламная компания «Гусь»</p>
+                <p>ОГРН: 1234567894512; ИНН: 1234567852; КПП: 124356925</p>
+                <p>Адрес: г. Томск, ул. Вершинина 39а</p>
+                <p>Часы работы: Пн-Сб (9:00-18:00)</p>
+                <p>Телефон: +7 (969) 96-69-96</p>
+                <p>e-mail: goose@tpu.ru</p>
+            </div>
+            <div style="position:relative;overflow:hidden;margin:25px 0 0 75px;"><a
+                    href="https://yandex.ru/maps/67/tomsk/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:0px;">Томск</a><a
+                    href="https://yandex.ru/maps/67/tomsk/house/ulitsa_vershinina_39a/bE0YfwFhTEwGQFtsfXh3cX9gYw==/?ll=84.961590%2C56.460338&utm_medium=mapframe&utm_source=maps&z=15.96"
+                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Вершинина, 39А —
+                    Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUvjAeJOD" width="250" height="220"
+                    frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+            <!--<input type="button" class="btns" id="clear" value="Очистить">-->
+        </div>
+    </main>
+    <script type="text/javascript" src="../scripts/transition.js"></script>
+</body>
+
+</html>

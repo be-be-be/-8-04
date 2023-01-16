@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="RU">
+
+<head>
+    <meta charset="utf-8" name="description" content="Веб-приложение для рекламного агенства" name="keywords"
+        content="реклама, объявление, ...">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../img/goose1.png" type="image/x-icon">
+    <title>Баннеры</title>
+</head>
+
+<body>
+    <script type="text/javascript" src="../js/jquery-1.4.1.min.js"></script>
+    <header>
+
+        <div class="logotype">
+            <img src="../img/goose2.png" alt="logo" class="logo" type="button" id="main">
+        </div>
+        <div class="navigation">
+            <input type="button" class="btn_menu transition" id="about" value="О нас">
+            <input type="button" class="btn_menu transition" id="services" value="Услуги">
+            <a href="#contacts">Контакты</a>
+            <div class="number">+7 (969) 96-69-96</div>
+        </div>
+    </header>
+    <main>
+
+        <div class="usl_desc">
+            <h2>Баннеры</h2>
+            <p>Вы можете рассчитать стоимость печати баннеров в зависимости от их формата и количества. Если Вам
+                необходимы дополнительные услуги дизайна или размещения, укажите это отдельно. </p>
+            <h2>Стоимость работы</h2>
+            <p>Дизайн работы - 1000 рублей.</p>
+            <p>Коэффициент размещения - 1,7 от общей стоимости.</p>
+            <div class="cost">
+                <table>
+                    <tr>
+                        <th>Формат (м)</th>
+                        <th>Количество (шт)</th>
+                        <th>Цена (руб/шт)</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">5x10</td>
+                        <td>1-100</td>
+                        <td>6950</td>
+                    </tr>
+                    <tr>
+                        <td>100-1000</td>
+                        <td>6940</td>
+                    </tr>
+                    <tr>
+                        <td>1000-10000</td>
+                        <td>6900</td>
+                    </tr>
+                    <tr>
+                        <td>10000+</td>
+                        <td>6850</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">4x12</td>
+                        <td>1-100</td>
+                        <td>6670</td>
+                    </tr>
+                    <tr>
+                        <td>100-1000</td>
+                        <td>6650</td>
+                    </tr>
+                    <tr>
+                        <td>1000-10000</td>
+                        <td>6630</td>
+                    </tr>
+                    <tr>
+                        <td>10000+</td>
+                        <td>6600</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">3x6</td>
+                        <td>1-100</td>
+                        <td>2500</td>
+                    </tr>
+                    <tr>
+                        <td>100-1000</td>
+                        <td>2470</td>
+                    </tr>
+                    <tr>
+                        <td>1000-10000</td>
+                        <td>2450</td>
+                    </tr>
+                    <tr>
+                        <td>10000+</td>
+                        <td>2400</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h2>Калькулятор стоимости</h2>
+
+            <select class="format" id="format">
+                <option selected disabled hidden>Выберите формат</option>
+                <option value="5x10">5x10</option>
+                <option value="4x12">4x12</option>
+                <option value="3x6">3x6</option>
+            </select>
+
+            <input class="formm" type="text" id="count" placeholder="Введите количество">
+            <select class="location" id="location">
+                <option selected disabled hidden>Размещение</option>
+                <option value="location_yes">Да</option>
+                <option value="location_no">Нет</option>
+            </select>
+            <select class="design" id="design">
+                <option selected disabled hidden>Дизайн</option>
+                <option value="design_yes">Нужен</option>
+                <option value="design_no">Не нужен</option>
+            </select>
+            <input type="button" class="btns" id="result" value="Рассчитать">
+            <br>
+            <p><output id="result2" style="width: 200px; height: 50px; font-size: 20px;"></output></p>
+            <p>Устраивает стоимость? Оставьте заявку!</p>
+            <input type="button" class="btns" id="btn22" value="Оставить заявку">
+            <form class="form-wrap" id="form-wrap">
+
+                <h2>Оставить заявку</h2>
+                <select class="format" id="formater">
+                    <option selected disabled hidden>Выберите формат</option>
+                    <option value="5x10">5x10</option>
+                    <option value="4x12">4x12</option>
+                    <option value="3x6">3x6</option>
+                </select>
+
+                <input class="formm" type="text" id="counter" placeholder="Введите количество">
+                <select class="location" id="locate">
+                    <option selected disabled hidden>Размещение</option>
+                    <option value="location_yes">Да</option>
+                    <option value="location_no">Нет</option>
+                </select>
+                <select class="design" id="designer">
+                    <option selected disabled hidden>Дизайн</option>
+                    <option value="yes">Нужен</option>
+                    <option value="no">Не нужен</option>
+                </select>
+                <br>
+                <input class="formm" type="name" id="name" placeholder="Имя">
+                <input class="formm" type="email" id="email" placeholder="Электронная почта">
+                <input class="formm" type="tel" id="tel" placeholder="Контактный телефон">
+                <p><textarea name="message" cols="70" rows="7" id="comment"
+                        placeholder="Оставьте комментарий"></textarea></p>
+                <input type="button" class="btns" id="svz" value="Свяжитесь со мной!">
+                <output id="msg" style="width: 200px; height: 50px; font-size: 20px;"></output>
+            </form>
+        </div>
+        <div class="contact_list">
+            <div class="osn"><a name="contacts">
+                    <h4>Наши контакты</h4>
+                </a>
+                <p>ООО Рекламная компания «Гусь»</p>
+                <p>ОГРН: 1234567894512; ИНН: 1234567852; КПП: 124356925</p>
+                <p>Адрес: г. Томск, ул. Вершинина 39а</p>
+                <p>Часы работы: Пн-Сб (9:00-18:00)</p>
+                <p>Телефон: +7 (969) 96-69-96</p>
+                <p>e-mail: goose@tpu.ru</p>
+            </div>
+            <div style="position:relative;overflow:hidden;margin:25px 0 0 75px;"><a
+                href="https://yandex.ru/maps/67/tomsk/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0px;">Томск</a><a
+                href="https://yandex.ru/maps/67/tomsk/house/ulitsa_vershinina_39a/bE0YfwFhTEwGQFtsfXh3cX9gYw==/?ll=84.961590%2C56.460338&utm_medium=mapframe&utm_source=maps&z=15.96"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Вершинина, 39А —
+                Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUvjAeJOD" width="250" height="220"
+                frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        </div>
+    </main>
+    <script type="text/javascript" src="../scripts/banners.js"></script>
+    <script type="text/javascript" src="../scripts/transition.js"></script>
+</body>
+
+</html>

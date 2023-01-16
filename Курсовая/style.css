@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'El Messiri', sans-serif !important;
+    background-color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    background-color: #e9e9e9;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 2px inset #e7e7e7;
+}
+  
+.logo {
+    height: 170px;
+    float: left;
+}
+
+.number {
+    padding: 10px;
+    font-size: 120%;
+    color: rgb(0, 0, 0);
+    float: right;
+}
+
+.btn_menu, header a {
+    font-size: 120%;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    border: 0;
+    background-color: transparent;
+    font-family: 'El Messiri', sans-serif !important;
+}
+  
+.btn_menu:hover, a:hover {
+    color: rgb(255, 153, 0);
+}
+
+.title {
+    padding-top: 30px;
+    width: 100%;
+    height: 500px;
+    background-color:#fbfbfb;
+    text-align: center;
+    padding-top: 150px;
+    border-bottom: 2px double #efeeee;
+}
+
+h1 {
+    padding: 20px 0 10px 10px;
+    font-size: 40px;
+    color: rgb(55, 55, 55);
+    font-weight: bold;
+}
+
+h2 {
+    padding: 20px 0 10px 10px;
+    font-size: 30px;
+    color: rgb(55, 55, 55);
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+    color: rgb(55, 55, 55);
+    font-weight: bold;
+}
+
+h4 {
+    padding: 20px 0 10px 10px;
+    font-size: 25px;
+    color: rgb(55, 55, 55);
+    font-weight: bold;
+}
+
+p {
+    padding-left: 15px;
+    font-size: 18px;
+    color: rgb(55, 55, 55);
+}
+
+.about p {
+    padding-left: 15px;
+    font-size: 25px;
+    color: rgb(55, 55, 55);
+} 
+
+.btns {
+    font-family: 'El Messiri', sans-serif !important;
+    font-size: 17px;
+    margin: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 40px;
+    border-width: 0;
+    background-color: rgb(255, 153, 0);
+}
+
+.btns:hover {
+    transition: 0.25s linear;
+    opacity: 0.8;
+}
+
+.desc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btns_more {
+    font-family: 'El Messiri', sans-serif !important;
+    font-size: 14px;
+    padding-top: -45px;
+    width: 90px;
+    height: 40px;
+    border-radius: 30px;
+    border-width: 0;
+    background-color: #ff9900;
+}
+
+.btns_more:hover {
+    transition: 0.25s linear;
+    opacity: 0.8;
+}
+
+.list {
+    position: relative;
+    display: grid;
+    justify-items: center; 
+    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    margin: 5px 0 50px 0; /* top right bottom left*/
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 320px;
+  
+    text-align: center;
+    margin: 10px;
+    padding-bottom: 12px;
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+}
+
+.card:nth-child(odd) {
+    background: rgb(55, 55, 55);
+    color: rgb(250, 250, 250);
+}
+
+.card:nth-child(odd) h3 {
+    color: rgb(250, 250, 250);
+}
+
+.container {
+    padding: 2px 16px;
+    text-align: left;
+    font-size: 16px;
+}
+
+img {
+    margin-top: 10px;
+    max-width: 300px;
+    height: 300px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1.5px solid #000000;
+    width: 30%;
+    text-align: center;
+    margin: 15px;
+    color: rgb(55, 55, 55);
+}
+
+th, td {
+    border: 1px solid #000000;
+}
+
+.cost {
+    display: flex;
+    justify-content: center;
+}
+
+select, .formm {
+    font-family: 'El Messiri', sans-serif !important;
+    font-size: 17px;
+    margin: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid #373737;
+    text-align: center;
+}
+
+#form-wrap {
+    display: none;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: fadeIn;
+}
+  
+#form-wrap.open {
+    border-top: 2px outset #dcdcdc;
+    display: block;
+}
+
+textarea {
+    font-family: 'El Messiri', sans-serif !important;
+    font-size: 17px;
+    padding: 10px;
+    resize: none;
+    border-radius: 15px;
+}
+
+.contact_list {
+    background-color: #e9e9e9;
+    width: 100%;
+    padding-bottom: 30px;
+    border-top: 2px outset #dcdcdc;
+    display: flex;
+    justify-content: baseline;
+
+}
+
+.contact_list p, .contact_list h2 {
+    color: #434343;
+}
+
+.about {
+    padding: 85px 20px 120px 20px; /* top right bottom left*/
+    width: 100%;
+    height: auto;
+    background-color:#fbfbfb;
+    text-align: center;
+    border-bottom: 2px double #efeeee;
+}
